@@ -1,11 +1,12 @@
 {
   "name": "slack-handler",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/handler.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node api/handler.js"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "serverless-http": "^3.0.0"
   }
 }
