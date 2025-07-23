@@ -1,19 +1,17 @@
 const express = require("express");
-const app = express();
 const serverless = require("serverless-http");
+
+const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-  res.send("Slack handler is running!");
-});
-
 app.post("/", (req, res) => {
-  console.log("📥 Incoming request to /api/handler");
+  console.log("📩 Incoming request");
   console.log("🔍 Headers:", req.headers);
   console.log("📦 Body:", req.body);
-  res.status(200).send("✅ Fake Slack handler received your request!");
+
+  res.status(200).send("✅ Slack handler received your request!");
 });
 
 module.exports = app;
