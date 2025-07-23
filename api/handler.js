@@ -28,7 +28,7 @@ export default async function handler(req, res) {
       </head>
       <body>
         <div class="box">
-          <h1>💥 Pwned by your friendly researcher 💥</h1>
+          <h1>💥 Pwned by 0xVendetta 💥</h1>
           <p>This is a security report, not an attack.<br>
           Please decommission or secure this subdomain ASAP.</p>
         </div>
